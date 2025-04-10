@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  padding: 50px 5%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  background: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 30px;
+  backdrop-filter: blur(30px);  
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.navb a {
+  font-size: 18px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+}
+
+.navb a:hover,
+.navb a.active {
+  color: rgb(141, 4, 195);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px; 
+  padding: 50px 5% 0;
+  color: aliceblue;
+  line-height: 30px;
+}
+
+.home-d h1 {
+  font-size: 45px;
+  line-height: 1;
+}
+
+.home-d h2 {
+  font-size: 29px;
+}
+
+.home-d p {
+  margin: 10px 0 20px;
+}
+
+.home-d .dwnd-s {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 40px;
+  box-shadow: 0 0 10px aliceblue;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+  color: aliceblue;
+}
+
+.home-d .icons {
+  margin-left: 20px;
+}
+
+.home-d .icons a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  font-size: 20px;
+  color: aliceblue;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: .5s;
+}
+
+.home-d .icons a:hover {
+  background: aliceblue;
+  box-shadow: 0 0 10px aliceblue;
+  color: #333;
+}
+
+.h-img .imgb {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  border: 2px solid rgb(106, 2, 122);
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgb(151, 3, 185);
+  overflow: hidden;
+  left: 100px;
+}
+
+.h-img .imgb img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .home {
+    gap: 30px;
+  }
+
+  .h-img .imgb {
+    width: 230px;
+    height: 350px;
+  }
+
+  .home-d h1 {
+    font-size: 40px;
+  }
+
+  .home-d h2 {
+    font-size: 25px;
+  }
+
+  .btn {
+    padding: 8px 25px;
+  }
+
+  .navb a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .home-d h1 {
+    font-size: 36px;
+  }
+
+  .home-d h2 {
+    font-size: 22px;
+  }
+
+  .h-img .imgb {
+    width: 200px;
+    height: 300px;
+    left: 0;
+  }
+
+  .btn {
+    padding: 8px 20px;
+  }
+
+  .navb a {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  header {
+    padding: 15px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 10px;
+  }
+
+  .home-d h1 {
+    font-size: 30px;
+  }
+
+  .home-d h2 {
+    font-size: 18px;
+  }
+
+  .h-img .imgb {
+    width: 180px;
+    height: 270px;
+    left: 0;
+  }
+
+  .btn {
+    padding: 6px 15px;
+  }
+
+  .navb a {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  header {
+    padding: 10px 5%;
+  }
+}
